@@ -1,0 +1,19 @@
+body {
+	
+	background-color: #3280fc;
+	margin-left: 10px;
+}
+
+h1 {
+	font-size: 30pt;
+	margin-left: 40px;
+}
+
+img {
+	margin-top: 15px;
+	width: 60px;
+}
+
+.header1{
+	background-color: #042559;
+}
