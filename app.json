@@ -1,5 +1,6 @@
 {
   "expo": {
+    "sdkVersion": "42.0.0",
     "name": "news",
     "slug": "news",
     "version": "1.0.0",
@@ -17,12 +18,17 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.news.simplenews",
+      "buildNumber": "1.0.0",
+      "permissions": ["1"]
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#FFFFFF"
+        "backgroundColor": "#FFFFFF",
+        "package": "com.news.simplenews",
+        "versionCode": 1
       }
     },
     "web": {

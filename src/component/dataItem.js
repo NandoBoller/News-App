@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Linking } from 'react-native';
 import { ListItem, Left, Thumbnail, Body, Text, Button, Right, View } from 'native-base';
 import TimeAgo from './time';
 
@@ -12,6 +13,10 @@ export default class DataItem extends Component {
     handlePress = () =>{
         const {url, title}= this.data;
         this.props.onPress({url,title});
+    }
+
+    handleClick = () => {
+        Linking.openURL(this.data.url)
     }
 
     render() {
@@ -30,7 +35,7 @@ export default class DataItem extends Component {
                     </View>
                 </Body>
                 <Right>
-                    <Button transparent onPress={this.handlePress}>
+                    <Button transparent onPress={this.handleClick}>
                         <Text>View</Text>
                     </Button>
                 </Right>
